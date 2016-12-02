@@ -8,10 +8,14 @@
 
 #include <ESP8266WiFi.h>
 
-const char* ssid = "UPC497BF84";
-const char* password = "md5uuxzhfXCt";
+//const char* ssid = "UPC497BF84";
+//const char* password = "md5uuxzhfXCt";
+const char* ssid = "HUAWEI-E5180-795D";
+const char* password = "R0T0R895839";
 
-const char* host = "192.168.0.45";
+
+//const char* host = "192.168.0.45";
+const char* host = "192.168.8.102";
 const int httpPort = 50000;
 
 // Use WiFiClient class to create TCP connections

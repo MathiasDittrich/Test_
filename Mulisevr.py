@@ -39,14 +39,14 @@ def TCPServer():
                 client, address = server.accept()
                 with clients_lock:
                     clientlist.append(client) #add it to the socket list so we can check it now
-                print 'new client added%s'%str(address)
+                print ('new client added%s'%str(address))
 
             else:
                 # select has indicated that these sockets have data available to recv
                 try:
                     data = s.recv(maxsize)
                     if data:
-                        print '%s: %s received from %s' % (time.strftime("%H:%M:%S"), data, s.getsockname())
+                        print ('%s: %s received from %s' % (time.strftime("%H:%M:%S"), data, s.getsockname()))
 
                         # Uncomment below to echo the recv'd data back
                         # to the sender... loopback!
